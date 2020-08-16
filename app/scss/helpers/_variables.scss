@@ -1,0 +1,21 @@
+// Colors
+$color-default: #f2f2f2;
+$color-default-lightest: #fff;
+$color-default-lighter: #c2c2c;
+
+//options
+$duration: 0.8s;
+$ease-in-out: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$ease-in: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$ease-out: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+
+//Responsive
+$info-desktop: "only screen and (max-width : 1920px)";
+$info-laptop-medium: "only screen and (max-width : 1440px)";
+$info-laptop-normal: "only screen and (max-width : 1368px)";
+$info-laptop-small: "only screen and (max-width : 1280px)";
+$info-laptop-smallest: "only screen and (max-width : 1200px)";
+$info-ipad-pro: "only screen and (max-width : 992px)";
+$info-ipad: "only screen and (max-width : 768px)";
+$info-phone-normal: "only screen and (max-width : 576px)";
+$info-phone-small: "only screen and (max-width : 341px)";

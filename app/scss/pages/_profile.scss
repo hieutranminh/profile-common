@@ -1,0 +1,51 @@
+.profile {
+  @include background-gradient(#dfe0db 45%, #fcebe1 45%);
+  width: 1170px;
+  margin: auto;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+
+  &__main {
+    @include flex;
+    background: #ffffff;
+    padding: 50px;
+
+    &__left {
+      width: 37%;
+      flex-shrink: 1;
+
+      .my__image {
+        text-align: center;
+        margin-bottom: 48px;
+        h3 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #333333;
+          margin-bottom: 10px;
+        }
+        span {
+          display: block;
+          font-family: 'Courgette', cursive;
+          font-size: 18px;
+          color: #a5a5a5;
+          margin-bottom: 25px;
+        }
+        img {
+          max-width: 250px;
+          max-height: 250px;
+          @include border-radius(50%);
+          @include box-shadow(0, 0, 10px, #fcebe1);
+        }
+      }
+
+      .my__contact {
+
+      }
+    }
+
+    &__right {
+      width: 63%;
+      padding-left: 5vw;
+    }
+  }
+}

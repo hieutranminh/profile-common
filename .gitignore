@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+dist/
+dist.zip
+app/video/realme-2019.mp4
+app.zip
+app/backup/
+.htaccess

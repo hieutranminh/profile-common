@@ -1,0 +1,143 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, p {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+.header {
+  background: purple;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0px; }
+
+.footer {
+  background: #fdf6c6;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0px; }
+
+/*----COMMON CSS-----*/
+img.icon {
+  width: 24px; }
+
+.title__common {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #a49393;
+  border-left: none;
+  border-right: none;
+  padding: 16px 0;
+  color: #453838;
+  letter-spacing: 2px; }
+
+.list__icon__common {
+  margin-bottom: 50px; }
+  .list__icon__common li {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 2px solid #a49393;
+    padding: 12px 0px; }
+    .list__icon__common li .box {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 4px 26px; }
+      .list__icon__common li .box:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: #a49393; }
+    .list__icon__common li a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #888888;
+      font-size: 14px;
+      font-weight: 600; }
+
+.profile {
+  background-color: #dfe0db 45%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfe0db 45%), to(#fcebe1 45%));
+  background-image: -webkit-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -moz-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -ms-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -o-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dfe0db 45%', endColorStr='#fcebe1 45%');
+  width: 1170px;
+  margin: auto;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif; }
+  .profile__main {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background: #ffffff;
+    padding: 50px; }
+    .profile__main__left {
+      width: 37%;
+      flex-shrink: 1; }
+      .profile__main__left .my__image {
+        text-align: center;
+        margin-bottom: 48px; }
+        .profile__main__left .my__image h3 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #333333;
+          margin-bottom: 10px; }
+        .profile__main__left .my__image span {
+          display: block;
+          font-family: 'Courgette', cursive;
+          font-size: 18px;
+          color: #a5a5a5;
+          margin-bottom: 25px; }
+        .profile__main__left .my__image img {
+          max-width: 250px;
+          max-height: 250px;
+          -webkit-border-radius: 50%;
+          -khtml-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          -webkit-box-shadow: 0 0 10px #fcebe1;
+          -khtml-box-shadow: 0 0 10px #fcebe1;
+          -moz-box-shadow: 0 0 10px #fcebe1;
+          -ms-box-shadow: 0 0 10px #fcebe1;
+          -o-box-shadow: 0 0 10px #fcebe1;
+          box-shadow: 0 0 10px #fcebe1; }
+    .profile__main__right {
+      width: 63%;
+      padding-left: 5vw; }

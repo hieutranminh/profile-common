@@ -1,0 +1,53 @@
+/*----COMMON CSS-----*/
+img.icon {
+  width: 24px;
+}
+
+//----- title -------
+.title__common {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #a49393;
+  border-left: none;
+  border-right: none;
+  padding: 16px 0;
+  color: #453838;
+  letter-spacing: 2px;
+}
+
+//----- list icon ------
+.list__icon__common {
+  margin-bottom: 50px;
+  li {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 2px solid #a49393;
+    padding: 12px 0px;
+    .box {
+      @include flex;
+      align-items: center;
+      position: relative;
+      padding: 4px 26px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: #a49393;
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #888888;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
