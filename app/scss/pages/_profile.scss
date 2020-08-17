@@ -16,7 +16,7 @@
 
       .my__image {
         text-align: center;
-        margin-bottom: 48px;
+        margin-bottom: 50px;
         h3 {
           font-size: 24px;
           font-weight: 600;
@@ -39,7 +39,72 @@
       }
 
       .my__contact {
+        .desc__common {
+          margin-bottom: 30px;
+        }
+      }
 
+      .my__capabilities {
+        .soft__skill {
+          @include flex;
+          padding: 50px 0px;
+          h5 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fcb3a0;
+            margin-bottom: 20px;
+          }
+          ul {
+            li {
+              list-style: none;
+              font-size: 14px;
+              font-weight: 500;
+              color: #333333;
+              margin-bottom: 20px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .right {
+            margin-left: 60px;
+          }
+        }
+      }
+
+      .my__technical {
+        .progress {
+          margin: 50px 0;
+          &__item {
+            margin-bottom: 20px;
+            p {
+              font-size: 14px;
+              font-weight: bold;
+              font-style: italic;
+              color: #333333;
+              margin-bottom: 5px;
+            }
+            .line {
+              width: 100%;
+              height: 20px;
+              position: relative;
+              background: transparent;
+              border: 2px solid #888888;
+              &__width {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #fcebe1;
+                height: 100%;
+                border-right: 2px solid #888888;
+              }
+            }
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
       }
     }
 

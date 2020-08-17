@@ -12,7 +12,7 @@ img.icon {
   border-left: none;
   border-right: none;
   padding: 16px 0;
-  color: #453838;
+  color: #333333;
   letter-spacing: 2px;
 }
 
@@ -41,13 +41,119 @@ img.icon {
         background: #a49393;
       }
     }
-    a {
+    a, span {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
       color: #888888;
       font-size: 14px;
       font-weight: 600;
+    }
+  }
+}
+
+//----- desc ------
+.desc__common {
+  font-size: 14px;
+  font-weight: 500;
+  word-spacing: 2px;
+  line-height: 28px;
+  text-align: justify;
+  color: #333333;
+}
+
+//----- list social -----
+.list__social__common {
+  margin-bottom: 50px;
+  li {
+    @include flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      @include transition(all 0.3s);
+      display: block;
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 600;
+      color: #333333;
+      &:hover {
+        color: #a49393;
+      }
+    }
+  }
+}
+
+
+//----- timeline -----
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 11%;
+    width: 2px;
+    height: calc(100% - 4px);
+    background: #a49393;
+  }
+  li {
+    @include flex;
+    position: relative;
+    align-items: flex-start;
+    list-style: none;
+    margin-bottom: 35px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(11% - 5px);
+      width: 12px;
+      height: 12px;
+      background: #333333;
+      @include border-radius(50%);
+    }
+    .period {
+      @include flex;
+      span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333333;
+      }
+    }
+    .content {
+      margin-left: 58px;
+      h5 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fcb3a0;
+        margin-bottom: 4px;
+      }
+      span {
+        display: block;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        color: #3c3c3c;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 22px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
