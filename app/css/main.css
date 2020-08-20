@@ -294,3 +294,16 @@ img.icon {
     .profile__main__right {
       width: 63%;
       padding-left: 5vw; }
+      .profile__main__right .my__signature {
+        text-align: center;
+        padding: 50px 0; }
+        .profile__main__right .my__signature b {
+          display: block;
+          font-weight: bold;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          color: #333333; }
+        .profile__main__right .my__signature svg {
+          width: 200px;
+          fill: #3c3c3c; }
